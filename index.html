@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aura Decor Studio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <h1 class="logo">✨ Aura Decor Studio</h1>
+      <button id="themeToggle" class="theme-btn" title="Toggle theme">🌙</button>
+    </div>
+  </header>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <h2>Transform Your Events Into Magic</h2>
+      <p>Premium tent decoration & event styling for weddings, parties & celebrations</p>
+      <a href="#contact" class="cta-btn">Book Now</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="gallery" class="gallery-section">
+      <div class="gallery-header">
+        <h2>Gallery</h2>
+      </div>
+      <div class="gallery-grid">
+        <img src="https://picsum.photos/400/300?random=1" alt="Tent 1">
+        <img src="https://picsum.photos/400/300?random=2" alt="Tent 2">
+        <img src="https://picsum.photos/400/300?random=3" alt="Tent 3">
+        <img src="https://picsum.photos/400/300?random=4" alt="Tent 4">
+      </div>
+    </section>
+
+    <section id="contact" class="card contact-section">
+      <h2>Book Now</h2>
+      <form id="bookingForm">
+        <label><span>Name</span> <input type="text" name="name" required></label>
+        <label><span>Phone</span> <input type="tel" name="phone" required></label>
+        <label><span>Number of Members</span> <input type="number" name="members" min="1" required></label>
+        <label><span>Booking Date</span> <input type="date" name="date" required></label>
+        <label><span>Message</span> <textarea name="message"></textarea></label>
+        <input type="hidden" id="secretKey" value="REPLACE_WITH_YOUR_SECRET">
+        <button type="submit">Submit</button>
+      </form>
+      <div id="response" class="response"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p>Support: <a href="mailto:samakshkaushik201@gmail.com?subject=Booking%20Inquiry%20Hum%20Aura%20Decor%20Studio">samakshkaushik201@gmail.com</a> • <a href="mailto:samakshkaushik.tech@gmail.com?subject=Booking%20Inquiry%20Hum%20Aura%20Decor%20Studio">samakshkaushik.tech@gmail.com</a></p>
+      <p>&copy; <span id="year"></span> Hum Aura Decor Studio</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
